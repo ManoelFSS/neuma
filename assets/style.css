@@ -170,12 +170,13 @@
     align-items: center;
   
   }
-  .sobre_nos .text_area{
+  .text_area{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     color: #fff;
+    background-color: #fff;
     font-weight: bolder;
     width: 100%;
     padding: 30px 10px 30px 10px;
