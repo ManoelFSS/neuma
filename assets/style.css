@@ -265,6 +265,7 @@
     padding: 5px;
     font-size: 18px;
     border: none;
+    box-shadow: 0PX 2PX 10PX rgb(0, 0, 0);
   }
 
   .contato .area_contato textarea {
@@ -273,7 +274,16 @@
     height: 150px;
     background-color: #fff;
     font-size: 17px;
+    box-shadow: 0PX 2PX 10PX rgb(0, 0, 0);
   } 
+  .contato .area_contato #submit{
+    transition: all 0.5S;
+    box-shadow: 0PX 2PX 10PX rgb(0, 0, 0);
+  }
+  .contato .area_contato #submit:hover {
+    color: #fff;
+    background-color: #000;
+  }
 
   /*  final area contato */
 
