@@ -265,15 +265,18 @@
     padding: 5px;
     font-size: 18px;
     border: none;
+    
   }
-
-  .contato .area_contato textarea {
-    margin-bottom: 10px;
-    width: 250px;
-    height: 150px;
-    background-color: #fff;
-    font-size: 17px;
-  } 
+  .contato .area_contato #submit {
+    margin-top: 40px;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  .contato .area_contato #submit:hover {
+    color: #fff;
+    background-color: #000;
+  }
+ 
 
   /*  final area contato */
 
