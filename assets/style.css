@@ -27,6 +27,19 @@
     display: flex;
     width: 80%;
   }
+  .area_Header label {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    position:absolute;
+    left: 0;
+    top: 0;
+    z-index: -2;
+  }
+  .area_Header input:checked ~ label{
+    display: flex;
+  }
+
   .area_Header input {
     display: none;
     appearance: none;
@@ -81,7 +94,7 @@
   .area_Header nav a{
     display: block;
     text-decoration: none;
-    font-size: clamp(1vw,1em + 1vw,1em);
+    font-size: clamp(1vw,1.3em + 1vw,1em);
     font-weight: bolder;
     color: white;
     transition: all 0.5s;
@@ -379,7 +392,10 @@
     .area_Header input:checked + nav {
       width: 200px;
     }
-
+    .area_Header nav a{
+      font-size: clamp(1vw,1.3em + 1vw,1.3em);
+      padding: 20px;
+    }
 
 
   }
