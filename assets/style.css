@@ -4,7 +4,10 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
   }
-
+  body {
+    margin-top: 15vh;
+    
+  }
 /* começo do header*/
 
   header{
@@ -17,11 +20,33 @@
     padding-bottom: 20px;
     background-color: black;
     box-shadow: 0px 4px 15px 2px #000;
+    z-index: 2;
   }
+
   .area_Header{
     display: flex;
     width: 80%;
   }
+  .area_Header input {
+    display: none;
+    appearance: none;
+    position: absolute;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    transition: all 0.4s ease-out;
+    background: #fff url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYSxGEI9tEoEFaoSMm4g5k_yUrMX4tcZpjtMlbMyEWpo3LPX07qJsidRsugIDJsZ7OkjM&usqp=CAU) no-repeat center / cover;
+  }
+
+  .area_Header input:checked {
+    width: 30px;
+    height: 30px;
+    transform: rotate(180deg);
+    right: 150px;
+    background: #fff url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrLmn8laj168RZaCgTrVF7co0kql_YPVIduA&usqp=CAU) no-repeat center / cover;
+  }
+
   #logo{
     min-width: 10vh;
     min-height:10vh;
@@ -33,13 +58,14 @@
   } 
   @keyframes mymove {
     0%   {
-             box-shadow: 0px 0px 0px chocolate;
+             box-shadow: 0px 0px 4px chocolate;
          }
 
     100% {
-            box-shadow: 0px 0px 20px 14px rgba(210, 105, 30, 0.747);
+            box-shadow: 0px 0px 20px 10px rgba(210, 105, 30, 0.747);
          }
   }
+
   .area_Header nav{
     flex: 1;
     display: flex;
@@ -97,12 +123,11 @@
   /* area banner*/
 
 .banner{
-  background: rgba(240, 148, 148, 0.075) url(https://ak.picdn.net/shutterstock/videos/1092685723/thumb/1.jpg?ip=x480) no-repeat center / cover;
-  height: calc(100vh - 10vh);
+  background: rgba(240, 148, 148, 0.075) url(https://ak.picdn.net/shutterstock/videos/1092685723/thumb/1.jpg?ip=x480) no-repeat center /100% 100%;
+  height: calc(100vh - 15vh);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 130px;
   transition: all 1.4s;
   animation: slider 13s alternate-reverse  infinite;
 }
@@ -132,9 +157,16 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 30px 10px 30px 10px;
+  margin-top: 16px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.466);
+  animation: banner 4s ease ;
+  z-index:1;
+}
+@keyframes banner {
+  0%{
+    transform: translateY(-500px);
+  }
 
 }
 
@@ -161,6 +193,7 @@
   /* fim da  area banner*/
 
   main{
+  padding-top: 70px;
     background: url(https://media.istockphoto.com/id/812615034/pt/vetorial/seamless-outline-pattern-for-a-fast-food-restaurant.jpg?s=1024x1024&w=is&k=20&c=MJjqmMQ0Eso9-If0PDjm7AqrG6B_lvgUc1evjjefyVY=) no-repeat center / cover;
   }
  /* area sobre*/
@@ -205,8 +238,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 10px;
     width: 100%;
+    margin-top: 80px;
+    padding: 20px 0px 20px 0px;
     background-color: rgba(210, 105, 30, 0.719);
   }
 
@@ -238,17 +272,14 @@
     align-items: center;
     flex-direction: column;
     flex: 1;
-    padding: 20px;
     min-width: 300px;
-    margin: 40px auto;
+  
   }
   .contato .area_contato h2 {
-    display: block;
-    width: 200px;
     margin-bottom: 10px;
     font-weight: bolder;
     border-bottom: solid 4px chocolate;
-    font-size: clamp(1vw,4vw + 4vw,3em);
+    font-size: clamp(1vw,4vw + 4vw,2.6em);
   }
 
   .contato .area_contato label {
@@ -265,6 +296,7 @@
     padding: 5px;
     font-size: 18px;
     border: none;
+    margin-bottom: 10px;
     box-shadow: 0PX 2PX 10PX rgb(0, 0, 0);
   }
 
@@ -312,7 +344,7 @@
     justify-content: center;
     align-items: center;
     padding: 4px;
-    font-size: clamp(1vw,1vw + 2vw,1em);
+    font-size: 12px;
     background-color: rgb(49, 49, 49);
   }
 
@@ -320,15 +352,46 @@
     height: 60px;
   }
 
- @media(max-width:1045px){
+ @media(max-width:760px){
+ 
     header .area_Header nav{
-      display: none;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: flex-start;
+      background-color: rgba(0, 0, 0, 0.692);
+      position: absolute;
+      padding-top: 18vh;
+      right: 0;
+      top: 0;
+      height: 100vh;
+      width: 0px;
+      overflow: hidden;
+      transition: all ease-out 0.4s;
+      z-index: -1;
+    }
+    header .area_Header nav ul{
+      display: block;
+    }
+    .area_Header input {
+      display: block;
+    }
+    .area_Header input:checked + nav {
+      width: 200px;
+    }
+
+
+
+  }
+  @media(max-width:670px){
+    .banner{
+      height: calc(100vh - 15vh);
+      
     }
   }
-  @media(min-width:670px){
+  @media(max-width:426px){
     .banner{
-       height: 120vh;
-       margin-top: 90px;
+       margin-top: 5vh;
     }
   }
 
