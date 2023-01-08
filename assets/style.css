@@ -44,7 +44,8 @@
     display: none;
     appearance: none;
     position: absolute;
-    right: 10px;
+    top: 30px;
+    right: 15px;
     width: 40px;
     height: 40px;
     border-radius: 5px;
@@ -393,8 +394,13 @@
       width: 200px;
     }
     .area_Header nav a{
+      display: flex;
+      justify-content: center;
+      align-items: center;
       font-size: clamp(1vw,1.3em + 1vw,1.3em);
       padding: 20px;
+      user-select:none;
+      outline: none;
     }
 
 
