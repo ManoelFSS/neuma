@@ -60,12 +60,13 @@
     right: 150px;
     background: #fff url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrLmn8laj168RZaCgTrVF7co0kql_YPVIduA&usqp=CAU) no-repeat center / cover;
   }
-  .area_Header P {
+  .area_Header #text_menu {
     display: none;
     color: chocolate;
     font-weight: bolder;
     position: absolute;
-    right: 12px;
+    right: 10px ;
+    padding: 0;
     top: 70px;
   }
 
@@ -130,7 +131,7 @@
      color: rgb(255, 255, 255);
      font-weight: bolder;
      position: fixed; 
-     font-size: 20px;
+     font-size: 18px;
      background-color: rgba(0, 0, 0, 0.534);
      padding: 20px 100px 20px 20px;
      right: 10px;
@@ -387,8 +388,9 @@
   }
 
  @media(max-width:760px){
-    .area_Header P {
+    .area_Header #text_menu {
       display: block;
+  
   }
  
     header .area_Header nav{
