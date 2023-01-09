@@ -57,5 +57,5 @@ main {
 }
 .salgados figure:hover img {
     height: 72%;
-  
+   transform: scalex(1.4);
   }

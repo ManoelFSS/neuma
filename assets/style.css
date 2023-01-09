@@ -46,8 +46,8 @@
     position: absolute;
     top: 30px;
     right: 15px;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 5px;
     transition: all 0.4s ease-out;
     background: #fff url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYSxGEI9tEoEFaoSMm4g5k_yUrMX4tcZpjtMlbMyEWpo3LPX07qJsidRsugIDJsZ7OkjM&usqp=CAU) no-repeat center / cover;
