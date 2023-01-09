@@ -61,6 +61,7 @@
     background: #fff url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrLmn8laj168RZaCgTrVF7co0kql_YPVIduA&usqp=CAU) no-repeat center / cover;
   }
   .area_Header P {
+    display: none;
     color: chocolate;
     font-weight: bolder;
     position: absolute;
@@ -121,15 +122,28 @@
     border-radius: 50%;
     position: fixed;
     right: 30px;
-    bottom: 60px;
+    bottom: 55px;
     animation:pulsewhats 1s linear infinite ;
+    z-index: 1;
   }
+  header p {
+     color: rgb(255, 255, 255);
+     font-weight: bolder;
+     position: fixed; 
+     font-size: 20px;
+     background-color: rgba(0, 0, 0, 0.534);
+     padding: 20px 100px 20px 20px;
+     right: 10px;
+     bottom: 50px;
+     border-radius: 10px 10px 10px 10px;
+  }
+  
   @keyframes pulsewhats{
     0%{
       box-shadow: 0px 0px 2px chocolate;
     }
     20%{
-      box-shadow: 0px 0px 10px chocolate;
+      box-shadow: 0px 0px 15px 5px chocolate;
       transform: scale(1.1);
     }
     100%{
@@ -373,6 +387,9 @@
   }
 
  @media(max-width:760px){
+    .area_Header P {
+      display: none;
+  }
  
     header .area_Header nav{
       display: flex;
