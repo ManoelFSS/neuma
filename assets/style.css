@@ -44,10 +44,10 @@
     display: none;
     appearance: none;
     position: absolute;
-    top: 30px;
+    top: 15px;
     right: 15px;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     border-radius: 5px;
     transition: all 0.4s ease-out;
     background: #fff url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYSxGEI9tEoEFaoSMm4g5k_yUrMX4tcZpjtMlbMyEWpo3LPX07qJsidRsugIDJsZ7OkjM&usqp=CAU) no-repeat center / cover;
@@ -59,6 +59,13 @@
     transform: rotate(180deg);
     right: 150px;
     background: #fff url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrLmn8laj168RZaCgTrVF7co0kql_YPVIduA&usqp=CAU) no-repeat center / cover;
+  }
+  .area_Header P {
+    color: chocolate;
+    font-weight: bolder;
+    position: absolute;
+    right: 12px;
+    top: 70px;
   }
 
   #logo{
@@ -208,7 +215,6 @@
   /* fim da  area banner*/
 
   main{
-    padding-top: 70px;
     background: url(https://media.istockphoto.com/id/812615034/pt/vetorial/seamless-outline-pattern-for-a-fast-food-restaurant.jpg?s=1024x1024&w=is&k=20&c=MJjqmMQ0Eso9-If0PDjm7AqrG6B_lvgUc1evjjefyVY=) no-repeat center / cover;
   }
  /* area sobre*/
@@ -216,7 +222,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  
+    height: calc(100vh - 16vh);
   }
   .sobre_nos .text_area{
     display: flex;

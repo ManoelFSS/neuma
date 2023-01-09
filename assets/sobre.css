@@ -1,3 +1,7 @@
 main {
-    height: 67vh;
+    height:calc(100%);
+    width: 100%;
+    align-items: center;
+    padding-bottom: 70px;
+    margin-top: 10px;
 }
