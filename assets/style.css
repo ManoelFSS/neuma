@@ -388,7 +388,7 @@
 
  @media(max-width:760px){
     .area_Header P {
-      display: none;
+      display: block;
   }
  
     header .area_Header nav{
