@@ -103,8 +103,8 @@
     padding: 0px 10px 0px 10px;
     
   }
-  .area_Header nav a:hover, #ativo{
-    color: chocolate;
+  .area_Header nav a:hover, .ativo{
+    color: chocolate !important;
 
   }
   .whats {
@@ -172,6 +172,7 @@
   align-items: center;
   width: 100%;
   margin-top: 16px;
+  padding: 20px 0px 20px 0px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.466);
   animation: banner 4s ease ;
@@ -223,7 +224,6 @@
     align-items: center;
     flex-direction: column;
     color: #fff;
-    
     font-weight: bolder;
     width: 100%;
     padding: 30px 10px 30px 10px;
