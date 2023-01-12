@@ -112,9 +112,11 @@
     padding: 0px 10px 0px 10px;
     
   }
-  .area_Header nav a:hover, .ativo{
-    color: chocolate !important;
-
+  .area_Header nav a:hover{
+    color: chocolate;
+  }
+  #ativo{
+    color: chocolate;
   }
   .whats {
     background: transparent url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR44m3w7VrsOfuKVmEVs4qkPclFLJSqwk3AgS22Z4CdEzD3Ke1) no-repeat center / cover;
